@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopping"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#FAB333"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/reply"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shopping lista"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:src="@drawable/delete"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:id="@+id/ocistiSve"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID_Artikla"
+            android:textStyle="bold"
+            android:layout_weight="1"
+          android:paddingLeft="5dp"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proizvođač"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Količina"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:paddingLeft="1dp"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:id="@+id/tabela"
+        >
+
+        <TableRow
+            android:background="@drawable/cell_shape"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/row1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vasilije Radunovic"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/kolicina1"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/x"
+                android:id="@+id/artikle1"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                />
+
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/cell_shape"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/row2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marko Markovic"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/kolicina2"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/x"
+                android:id="@+id/artikle2"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/cell_shape"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/row3"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fedor Gregovic"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/kolicina3"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/x"
+                android:id="@+id/artikle3"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+
+
+
+
+        </TableRow>
+
+
+
+
+
+
+
+    </TableLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        >
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Izvrši kupovinu"
+            android:background="#7FFF00"
+android:id="@+id/izvrsi"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

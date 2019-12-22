@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:paddingTop="40dp"
+    >
+
+
+    <TextView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="Login Korisnika"
+        android:textColor="#FFC107"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:gravity="center"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:gravity="center_horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/med"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/secure"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="140dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="#FFC107"
+            android:textColor="#FFC107"
+            android:hint="Username"
+            android:foregroundTint="#FFC107"
+            android:backgroundTint="#FFC107"
+            android:id="@+id/username"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="#FFC107"
+            android:textColor="#FFC107"
+            android:hint="Password"
+
+            android:foregroundTint="#FFC107"
+            android:id="@+id/password"
+            android:backgroundTint="#FFC107"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Zaboravili ste šifru?"
+            android:textColor="#FAB333"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:background="#FAB333"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/dugme"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FAB333"
+                android:text="Niste napravili account?"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Registruj se"
+                android:textColor="#FAB333"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/registracija"
+                />D
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

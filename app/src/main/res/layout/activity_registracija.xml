@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registracija"
+
+    android:paddingTop="40dp"
+    >
+
+
+    <TextView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="Registracija korisnika"
+        android:textColor="#DC143C"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:gravity="center"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/security"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="#DC143C"
+            android:textColor="#FFC107"
+            android:hint="Unesite ime:"
+            android:foregroundTint="#DC143C"
+            android:backgroundTint="#DC143C"
+            android:id="@+id/ime"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="#DC143C"
+            android:textColor="#FFC107"
+            android:hint="Unesite prezime:"
+            android:foregroundTint="#DC143C"
+            android:backgroundTint="#DC143C"
+            android:id="@+id/prezime"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:textColorHint="#DC143C"
+            android:textColor="#FFC107"
+            android:hint="Unesite adresu:"
+            android:foregroundTint="#DC143C"
+            android:backgroundTint="#DC143C"
+
+            android:id="@+id/adresa"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:textColorHint="#DC143C"
+            android:textColor="#FFC107"
+            android:hint="Unesite broj telefona:"
+            android:foregroundTint="#DC143C"
+            android:backgroundTint="#DC143C"
+
+            android:id="@+id/broj_telefona"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+
+            android:textColorHint="#DC143C"
+            android:textColor="#FFC107"
+            android:hint="Unesite username:"
+            android:foregroundTint="#DC143C"
+            android:backgroundTint="#DC143C"
+
+            android:id="@+id/username"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:textColorHint="#DC143C"
+            android:textColor="#FFC107"
+            android:hint="Unesite password:"
+            android:foregroundTint="#DC143C"
+            android:backgroundTint="#DC143C"
+
+            android:id="@+id/password"
+            />
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Registruj se"
+            android:textColor="#FAB333"
+            android:background="#DC143C"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/dugme"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DC143C"
+                android:text="Već imate account?"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Login se"
+                android:textColor="#FAB333"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/login"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
