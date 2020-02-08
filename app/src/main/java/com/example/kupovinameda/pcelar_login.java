@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -21,61 +19,35 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class pcelar_login extends AppCompatActivity {
 private Button dugme;
-private TextView registracija;
-private EditText username,password;
-private ImageView pcelar_login;
+    private EditText username,password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pcelar_login);
 
         dugme = findViewById(R.id.dugme);
-        registracija = findViewById(R.id.registracija);
+
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
-
-        pcelar_login = findViewById(R.id.pcelar_login);
-
-pcelar_login.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent intent3 = new Intent(MainActivity.this,pcelar_login.class);
-        startActivity(intent3);
-    }
-});
-
-
 
         dugme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                LoginNovi();
-
-
+LoginNovi();
             }
         });
 
 
-        registracija.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this,registracija.class);
-                startActivity(intent2);
-            }
-        });
 
     }
-
-
 
     private void LoginNovi(){
 
 
-        String url = "https://diplomskikupovinameda.000webhostapp.com/Login.php";
+        String url = "https://diplomskikupovinameda.000webhostapp.com/LoginPcelar.php";
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -84,17 +56,17 @@ pcelar_login.setOnClickListener(new View.OnClickListener() {
 
                 if(id >=1){
 
-                    Intent inte = new Intent(MainActivity.this,Menu.class);
+                    Intent inte = new Intent(pcelar_login.this,pcelar_panel.class);
                     inte.putExtra("UserName",username.getText().toString().trim());
                     startActivity(inte);
                 }else{
-                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(pcelar_login.this, "Login Failed", Toast.LENGTH_SHORT).show();
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                Toast.makeText(pcelar_login.this, "Error", Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override
@@ -109,5 +81,7 @@ pcelar_login.setOnClickListener(new View.OnClickListener() {
         };
         requestQueue.add(stringRequest);
     }
+
+
 
 }

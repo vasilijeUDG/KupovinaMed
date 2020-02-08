@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".pcelar_login"
 
     android:paddingTop="40dp"
     >
@@ -18,7 +18,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="1dp"
-        android:text="Login Korisnika"
+        android:text="Login Pčelar"
         android:textColor="#FFC107"
         android:textSize="40dp"
         android:textStyle="italic"
@@ -36,16 +36,12 @@
 
         >
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/med"
-            />
+
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/secure"
+            android:src="@drawable/pcelar"
             />
 
     </LinearLayout>
@@ -104,55 +100,10 @@
             android:id="@+id/dugme"
             />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FAB333"
-                android:text="Niste napravili account?"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:fontFamily="sans-serif"
-                android:text="Registruj se"
-                android:textColor="#FAB333"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:id="@+id/registracija"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp">
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/pcelar"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/pcelar_login"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FAB333"
-                android:text="Otvori login pcelara"
-                />
 
 
-        </LinearLayout>
+
+
 
 
 

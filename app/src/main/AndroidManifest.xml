@@ -3,6 +3,7 @@
     package="com.example.kupovinameda">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".pcelar"></activity>
+        <activity android:name=".pcelar_pozivi"></activity>
+        <activity android:name=".pcelar_informacije" />
+        <activity android:name=".pcelar_proizvod" />
+        <activity
+            android:name=".pcelar_poruke"
+            android:label="@string/title_activity_pcelar_poruke"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".pcelar_login" />
+        <activity android:name=".pcelar_panel" />
+        <activity android:name=".pcelar" />
         <activity android:name=".shopping" />
         <activity android:name=".poruke" />
         <activity android:name=".kupovinaMeda" />
