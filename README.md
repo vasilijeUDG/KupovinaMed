@@ -20,4 +20,12 @@ Place here figure that depicts logical overview of your project. (You can use dr
 
 Technology Stack
 
-Describe here technology stack you are using.
+Android Studio -
+
+Volley Library-
+
+000webhost-
+
+PHP,JSON scripts - 
+
+
