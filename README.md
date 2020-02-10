@@ -15,7 +15,7 @@ With the rapid technological changes, the manufacturer is getting new ways to ma
 
 Logical View
 
-Place here figure that depicts logical overview of your project. (You can use draw.io).
+https://github.com/vasilijeUDG/KupovinaMed/blob/master/Dijagram.png
 
 
 Technology Stack
